@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="/assets/images/logo.jpeg">
+        <title>Physics Plus +</title>
+        <link rel="stylesheet" href="/assets/style/bulma.css"/>
+        <link rel="stylesheet" href="/assets/style/main.css"/>
+        <link rel="stylesheet" href="/assets/style/all.min.css"/>
+        
+    </head>
+    <body onload="percent()">
+        <div class="navsect">
+        </div>
+        <nav class="navbar" role="navigation" aria-label="main navigation" id="navBar">
+        </nav>
+       
+        <span id="trueans" class="is-size-3" style="display:none">100</span> <!-- لما تيجي تضيف الPoint بالباك اند ضيفها هنا -->
+        <section class="hero is-fullheight quiz-ans bordered">
+            <h1 class="title is-2 has-text-centered">Quiz Name</h1>
+            <p class="title is-4 has-text-centered">
+              You've answered 
+              <span id="trueans2" class="is-size-3">0</span> 
+              in true from
+              <span id="allans" class="is-size-3">130</span> Question.  <!-- لما تيجي تضيف عدد الاسئلة بالباك اند ضيفها هنا -->
+            </p>
+            
+            <div class="progC">
+                <progress class="progress is-medium" max="100" id="prog"></progress>
+                <p class="persent" id="pres">0%</p>
+            </div>
+            
+    
+    
+            <div class="hero-body cct cvf">
+                <div class="container">
+                    <div class="columns is-centered is-flex-direction-column">
+    
+                        <div class="column istrue">
+                            <div class="has-text-left">
+                                <label class="label is-bg-red" id="deg">1 Point</label>
+                            </div>
+                            <h2 class="title is-size-4">Quistion Head</h2>
+                            <img src="https://via.placeholder.com/1000x200" alt="">
+                            <p class="subtitle is-size-5 paragraph">Quistion</p>
+                            <div class="field control is-flex is-flex-direction-column">
+                                <label class="ans true">Option</label>
+                            </div>
+                        </div>
+    
+                        <div class="column isfalse">
+                            <div class="has-text-left">
+                                <label class="label is-bg-red" id="deg">1 Point</label>
+                            </div>
+                            <h2 class="title is-size-4">Quistion Head</h2>
+                            <img src="https://via.placeholder.com/1000x200" alt="">
+                            <p class="subtitle is-size-5 paragraph">Quistion</p>
+                            <div class="field control is-flex is-flex-direction-column">
+                                <label class="ans true">Option </label>
+                                <label class="ans false">Option</label>
+                            </div>
+                        </div>
+    
+                        <div class="column isfalse">
+                            <div class="has-text-left">
+                                <label class="label is-bg-red" id="deg">1 Point</label>
+                            </div>
+                            <h2 class="title is-size-4">Quistion Head</h2>
+                            <p class="subtitle is-size-5 paragraph">Quistion</p>
+                            <div class="field control is-flex is-flex-direction-column">
+                                <label class="ans true">Option </label>
+                                <label class="ans false">Option</label>
+                            </div>
+                        </div>
+                      
+    
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            <div class="buttons is-centered">
+              <a class="button is-danger" href="">Retake Quiz</a>
+              <a class="button is-zeto is-outlined" href="">Watch Lecture</a>
+            </div>
+        </section>
+
+
+        <footer class="footer">
+        </footer>
+    
+        <div class="licens">  
+        </div>
+
+    </body>
+</html>
+
+<script src="/assets/javascript/javascript.js"></script>
+<script src="/assets/javascript/navFooterLicenes.js"></script>

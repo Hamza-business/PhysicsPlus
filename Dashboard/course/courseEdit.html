@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>DashBoard</title>
+    <link rel="icon" type="image/x-icon" href="/assets/images/logo.jpeg">
+
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/assets/style/all.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/assets/style/bulma.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/assets/style/main.css'>
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/dataTables.bulma.min.css"/>
+</head>
+<body onclick="menu()">
+    <div class="Dcontent">
+        <nav class="bars hide">
+            <div class="icons">
+                <i class="fas fa-caret-left"></i>
+                <i class="fas fa-bars hide"></i>
+            </div>
+            <div class="Dpages">
+                <div class="pgitems"><a href="/Dashboard/main.html"><span class="icon"><i class="fa fa-home"></i> </span> Home</a></div>
+                <div class="pgitems"><a href="/Dashboard/admins.html"><span class="icon"><i class="fas fa-users-cog"></i> </span> Admins</a></div>
+                <div class="pgitems"><a href="/Dashboard/students.html"><span class="icon"><i class="fas fa-user-graduate"></i> </span> Students</a></div>
+                <div class="pgitems"><a href="/Dashboard/groups.html"><span class="icon"><i class="fas fa-th-large"></i> </span> Groups</a></div>
+                <div class="pgitems active"><a href="/Dashboard/courses.html"><span class="icon"><i class="fas fa-boxes"></i> </span> Courses</a></div>
+                <div class="pgitems"><a href="/Dashboard/questions.html"><span class="icon"><i class="fas fa-question"></i> </span> Questions</a></div>
+                <div class="pgitems"><a href="/Dashboard/courseRes.html"><span class="icon"><i class="fas fa-dollar-sign"></i> </span> Course Reservations</a></div>
+                <div class="pgitems"><a href="/Dashboard/organiReq.html"><span class="icon"><i class="far fa-building"></i> </span> Organization Requests</a></div>
+                <div class="pgitems"><a href="/Dashboard/notifications.html"><span class="icon"><i class="fas fa-bell"></i> </span> Notifications</a></div>
+            </div>
+        </nav>
+        <main class="maincontent">
+            <div class="infos is-flex is-flex-direction-row is-justify-content-space-between">
+                <div class="">
+                    <p class="title is-4">Courses</p>
+                    <p class="subtitle is-6"><a href="/Dashboard/main.html">Home</a> > <a href="/Dashboard/courses.html">Courses</a> > <a href="/Dashboard/courses.html">Chapter 1 - Part 1</a> > <span>Edit Course</span></p>
+                </div>
+            </div>
+            <div class="coursecontent columns">
+                <div class="column is-12">
+                    <div class="block">
+                        <div class="columns">
+                            <div class="column is-5">
+                                <div class="courseSD has-text-centered">
+                                    <img src="https://via.placeholder.com/400x260" alt="">
+                                </div>
+                                <p class="subtitle is-6 heada">Main Information</p>
+                                <div class="basicInfo">
+                                    <p class="subtitle is-6">Summary: <br><span>Chapter 1 - Part 1 Physics+</span></p>
+                                    <p class="subtitle is-6">Price: <br><span>-</span></p>
+                                    <p class="subtitle is-6">Teacher: <br><span>Mr Mohammed Ali</span></p>
+                                    <p class="subtitle is-6">Batch: <br><span>Secondary - 3rd Secondary</span></p>
+                                    <p class="subtitle is-6">Subject: <br><span>Physics</span></p>
+                                    <p class="subtitle is-6">Videos Views Count: <br><span>2</span></p>
+                                </div>
+                            </div>
+                            <div class="column is-1"></div>
+                            <div class="column is-6">
+                                <form action="">
+                                    <p class="subtitle is-6 heada">Course Settings</p>
+                                    <label class="checkbox form-control"><input type="checkbox">Course appear To Web</label>
+                                    <label class="checkbox form-control"><input type="checkbox">Course appear To App</label>
+                                    <label class="checkbox form-control"><input type="checkbox">Videos appear To Web</label>
+                                    <label class="checkbox form-control"><input type="checkbox">Videos appear To App</label>
+
+                                    <br>
+                                    <p class="subtitle is-6 heada">Available From Date</p>
+                                    <div class="control">
+                                        <input class="input" type="date" placeholder="Available at">
+                                    </div>
+                                    <br>
+                                    <button type="submit" class="button adder is-fullwidth">Update Course</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+    <style>
+        body{
+            padding: 0;
+            overflow-y: hidden;
+        }
+    </style>
+</body>
+</html>
+<script src="/assets/javascript/dashboard.js"></script>

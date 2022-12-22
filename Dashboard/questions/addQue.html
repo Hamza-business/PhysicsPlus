@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>DashBoard</title>
+    <link rel="icon" type="image/x-icon" href="/assets/images/logo.jpeg">
+
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/assets/style/all.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/assets/style/bulma.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/assets/style/main.css'>
+</head>
+<body onclick="menu()">
+    <div class="Dcontent">
+        <nav class="bars">
+            <div class="icons">
+                <i class="fas fa-caret-left"></i>
+                <i class="fas fa-bars hide"></i>
+            </div>
+            <div class="Dpages">
+                <div class="pgitems"><a href="/Dashboard/main.html"><span class="icon"><i class="fa fa-home"></i> </span> Home</a></div>
+                <div class="pgitems"><a href="/Dashboard/admins.html"><span class="icon"><i class="fas fa-users-cog"></i> </span> Admins</a></div>
+                <div class="pgitems"><a href="/Dashboard/students.html"><span class="icon"><i class="fas fa-user-graduate"></i> </span> Students</a></div>
+                <div class="pgitems"><a href="/Dashboard/groups.html"><span class="icon"><i class="fas fa-th-large"></i> </span> Groups</a></div>
+                <div class="pgitems"><a href="/Dashboard/courses.html"><span class="icon"><i class="fas fa-boxes"></i> </span> Courses</a></div>
+                <div class="pgitems active"><a href="/Dashboard/questions.html"><span class="icon"><i class="fas fa-question"></i> </span> Questions</a></div>
+                <div class="pgitems"><a href="/Dashboard/courseRes.html"><span class="icon"><i class="fas fa-dollar-sign"></i> </span> Course Reservations</a></div>
+                <div class="pgitems"><a href="/Dashboard/organiReq.html"><span class="icon"><i class="far fa-building"></i> </span> Organization Requests</a></div>
+                <div class="pgitems"><a href="/Dashboard/notifications.html"><span class="icon"><i class="fas fa-bell"></i> </span> Notifications</a></div>
+            </div>
+        </nav>
+        <main class="maincontent">
+            <div class="infos is-flex is-flex-direction-row is-justify-content-space-between">
+                <div class="">
+                    <p class="title is-4">Questions</p>
+                    <p class="subtitle is-6"><a href="/Dashboard/main.html">Home</a> > <a href="/Dashboard/questions.html">question</a> > <span>New</span></p>
+                </div>
+            </div>
+            <div class="coursecontent columns">
+                <div class="column is-12 totoed">
+                    <div class="block quests">
+                        <form action="">
+                            <div class="columns is-multiline">
+                                <div class="column is-4">
+                                    <p class="subtitle is-6 heada">Batch<span class="has-text-danger">*</span></p>
+                                    <div class="select">
+                                        <select name="Batch" class="select" id="Batch">
+                                            <option value="1Secondary">1st Secondary</option>
+                                            <option value="2Secondary">2nd Secondary</option>
+                                            <option value="3Secondary">3rd Secondary</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="column is-4">
+                                    <p class="subtitle is-6 heada">Subject<span class="has-text-danger">*</span></p>
+                                    <div class="select">
+                                        <select name="Subject" class="select" id="Subject">
+                                            <option value="All">All</option>
+                                            <option value="Physics">Physics</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="column is-4">
+                                    <p class="subtitle is-6 heada">Question Type<span class="has-text-danger">*</span></p>
+                                    <div class="select">
+                                        <select name="Type" id="Type">
+                                            <option value="All">All</option>
+                                            <option value="All">Multiple choice</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="column is-4">
+                                    <p class="subtitle is-6 heada">Difficulty<span class="has-text-danger">*</span></p>
+                                    <div class="select">
+                                        <select name="Difficulty" id="Difficulty">
+                                            <option value="All">All</option>
+                                            <option value="Easy">Easy</option>
+                                            <option value="Average">Average</option>
+                                            <option value="Hard">Hard</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="column is-3"></div>
+
+                                <div class="column is-12">
+                                    <p class="subtitle is-5 heada">Title</p>
+                                    <textarea class="textarea"></textarea>
+                                </div>
+                                <div class="column is-12 file is-centered is-boxed has-name">
+                                    <label class="file-label">
+                                      <input class="file-input" type="file" name="resume" id="uploader1" multiple>
+                                      <span class="file-cta">
+                                        <span class="file-icon"><i class="fas fa-upload"></i></span>
+                                        <span class="file-label">Upload Image as Title</span>
+                                      </span>
+                                      <span class="file-name" id="filesName"></span>
+                                    </label>
+                                </div>
+
+
+                                <div class="column is-12">
+                                    <p class="subtitle is-5 heada">Topics</p>
+                                    <div class="control">
+                                        <input class="input" type="input">
+                                    </div>
+                                </div>
+                                <div class="column is-12">
+                                    <p class="subtitle is-5 heada">Notes</p>
+                                    <div class="control">
+                                        <input class="input" type="input">
+                                    </div>
+                                </div>
+                                <div class="column is-12">
+                                    <label class="checkbox form-control"><input type="checkbox">Single Correct choice</label>
+                                </div>
+                                
+                                
+                                <div class="column is-12 queansS">
+                                    <p class="subtitle is-5 heada">Question Choices</p>
+                                    <div class="ques">
+
+                                    </div>
+                                    <div class="as-Link" onclick="ansshower(this)"><i class="fas fa-plus"></i> Add Participants</div>
+                                    <div class="queIns hide">
+                                        <label class="checkbox form-control"><input type="checkbox" onchange="trueans(this)"><input type="text" ans="false"></label>
+                                        Check to add as the right answer <br>
+                                        <div class="button is-info is-small" onclick="addAns(this)">Add Choice</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="button adder" style="font-size: 18px; padding:5px 40px">Save and add Another</a>
+                            <button class="button adder" style="font-size: 18px; padding:5px 40px">Create Question</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+    <style>
+        body{
+            padding: 0;
+            overflow-y: hidden;
+        }
+    </style>
+</body>
+</html>
+<script src="/assets/javascript/dashboard.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script>
+    $("#uploader1").change(function() {
+        var files = $(this)[0].files;
+        for (var i = 0; i < files.length; i++) {
+            $("#filesName").append(`<p>${files[i].name}</p>`);
+        }
+    });
+</script>

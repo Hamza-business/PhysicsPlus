@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>DashBoard</title>
+    <link rel="icon" type="image/x-icon" href="/assets/images/logo.jpeg">
+
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/assets/style/all.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/assets/style/bulma.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/assets/style/main.css'>
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/dataTables.bulma.min.css"/>
+</head>
+<body onclick="menu()">
+    <div class="Dcontent">
+        <nav class="bars hide">
+            <div class="icons">
+                <i class="fas fa-caret-left"></i>
+                <i class="fas fa-bars hide"></i>
+            </div>
+            <div class="Dpages">
+                <div class="pgitems"><a href="/Dashboard/main.html"><span class="icon"><i class="fa fa-home"></i> </span> Home</a></div>
+                <div class="pgitems"><a href="/Dashboard/admins.html"><span class="icon"><i class="fas fa-users-cog"></i> </span> Admins</a></div>
+                <div class="pgitems"><a href="/Dashboard/students.html"><span class="icon"><i class="fas fa-user-graduate"></i> </span> Students</a></div>
+                <div class="pgitems"><a href="/Dashboard/groups.html"><span class="icon"><i class="fas fa-th-large"></i> </span> Groups</a></div>
+                <div class="pgitems active"><a href="/Dashboard/courses.html"><span class="icon"><i class="fas fa-boxes"></i> </span> Courses</a></div>
+                <div class="pgitems"><a href="/Dashboard/questions.html"><span class="icon"><i class="fas fa-question"></i> </span> Questions</a></div>
+                <div class="pgitems"><a href="/Dashboard/courseRes.html"><span class="icon"><i class="fas fa-dollar-sign"></i> </span> Course Reservations</a></div>
+                <div class="pgitems"><a href="/Dashboard/organiReq.html"><span class="icon"><i class="far fa-building"></i> </span> Organization Requests</a></div>
+                <div class="pgitems"><a href="/Dashboard/notifications.html"><span class="icon"><i class="fas fa-bell"></i> </span> Notifications</a></div>
+            </div>
+        </nav>
+        <main class="maincontent">
+            <div class="infos is-flex is-flex-direction-row is-justify-content-space-between">
+                <div class="">
+                    <p class="title is-4">Courses</p>
+                    <p class="subtitle is-6"><a href="/Dashboard/main.html">Home</a> > <a href="/Dashboard/courses.html">Courses</a> > <span>Chapter 1 - Part 1</span></p>
+                </div>
+                <div class="">
+                    <button class="button"><i class="fas fa-pen"></i> Edit</button>
+                    <button class="button is-danger"><i class="fas fa-trash-alt"></i> Delete</button>
+                </div>
+            </div>
+            <div class="coursecontent columns">
+                <div class="column is-3">
+                    <div class="courseSD has-text-centered">
+                        <img src="https://via.placeholder.com/400x260" alt="">
+                        <p class="title is-5 has-text-weight-bold">Chapter 1 - Part 1</p>
+                        <p><span>0</span> Reviews</p>
+                    </div>
+                    <p class="subtitle is-6 heada">Basic Information</p>
+                    <div class="basicInfo">
+                        <p class="subtitle is-6">Summary: <br><span>Chapter 1 - Part 1 Physics+</span></p>
+                        <p class="subtitle is-6">Price: <br><span>-</span></p>
+                        <p class="subtitle is-6">Teacher: <br><span>Mr Mohammed Ali</span></p>
+                        <p class="subtitle is-6">Subject: <br><span>Physics</span></p>
+                        <p class="subtitle is-6">Status: <br><span>Published At</span><span>16/08/2022</span></p>
+                        <p class="subtitle is-6">Organization: <br><span>Mr Mohammed Ali</span></p>
+                        <p class="subtitle is-6">Adress: <br><span>Egypt</span></p>
+                        <p class="subtitle is-6">Course Appear To Web: <br><span>Yes</span></p>
+                        <p class="subtitle is-6">Course Appear To App: <br><span>Yes</span></p>
+                        <p class="subtitle is-6">Videos Appear To Web: <br><span>Yes</span></p>
+                        <p class="subtitle is-6">Videos Appear To App: <br><span>Yes</span></p>
+                        <p class="subtitle is-6">Videos Views Count: <br><span>2</span></p>
+                    </div>
+                    <p class="subtitle is-6 heada">Course Details</p>
+                    <div class="courseDtals">
+                        <a href="/Dashboard/course/materials.html" class="active">Materials</a>
+                        <a href="/Dashboard/course/students.html">Students</a>
+                        <a href="/Dashboard/course/students.html">Unregistered Students</a>
+                    </div>
+                </div>
+                <div class="column is-9">
+                    <div class="coursecont" id="materials">
+                        <div class="sectionSelect">
+                            <a href="#lessons" class="active">Lessons</a>
+                            <a href="#quizzes">Quizzes</a>
+                            <a href="#exercices">Exercices</a>
+                            <a href="#files">Files</a>
+                            <a href="#videos">Videos</a>
+                            <a href="#views">Views</a>
+                        </div>
+                        <div id="lessons" class="csections active">
+                            <button class="button adder" onclick="window.open('../course/addLesson.html','_self')"><i class="fas fa-plus"></i> Create Lesson</button>
+                            <table id="lessonsT" class="table is-striped" style="width:100%; min-width: 550px">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Status</th>
+                                        <th>controle</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="">Lesson 1</a></td>
+                                        <td>Published</td>
+                                        <td><button class="button is-small"><i class="fas fa-eye"></i></button>
+                                            <button class="button is-small"><i class="fas fa-trash-alt"></i></button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="quizzes" class="csections">
+                            <button class="button adder" onclick="window.open('../course/addQuiz.html','_self')"><i class="fas fa-plus"></i> Create Quiz</button>
+                            <table id="quizT" class="table is-striped" style="width:100%; min-width: 620px">
+                                <thead>
+                                    <tr>
+                                        <th>Title</th>
+                                        <th>Duration in minutes</th>
+                                        <th>Total Mark</th>
+                                        <th>Status</th>
+                                        <th>Controle</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="">Quiz</a></td>
+                                        <td>30</td>
+                                        <td>300</td>
+                                        <td>Ready to be Published</td>
+                                        <td>
+                                            <button class="button is-small"><i class="fas fa-eye"></i></button>
+                                            <button class="button is-small"><i class="fas fa-pencil-alt"></i></button>
+                                            <button class="button is-small"><i class="fas fa-book"></i></button>
+                                            <button class="button is-small"><i class="fas fa-trash-alt"></i></button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="exercices" class="csections"></div>
+                        <div id="files" class="csections"></div>
+                        <div id="videos" class="csections"></div>
+                        <div id="views" class="csections"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+    <style>
+        body{
+            padding: 0;
+            overflow-y: hidden;
+        }
+    </style>
+</body>
+</html>
+<script src="/assets/javascript/dashboard.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.1/js/dataTables.bulma.min.js"></script>
+<script>
+$(document).ready(function () {
+    $('#lessonsT').DataTable();
+    $('#quizT').DataTable();
+});
+
+</script>
