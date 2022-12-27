@@ -1440,3 +1440,120 @@ td img {
 .Aoption p[anstype="true"]{
     color: #008586;
 }
+.avatar {
+    width: 70px;
+    height: 70px;
+    background-color: aliceblue;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px dashed;
+    margin: auto auto 10px;
+    line-height: 65px;
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.grouP {
+    padding: 0px 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px #12716f;
+    width: fit-content;
+}
+
+.courseT img {
+    width: 80px;
+}
+.coursesConta {
+    min-width: max-content;
+    padding: 0 !important;
+}
+.coursesConta .courseT > div {
+    padding: 10px 16px;
+    margin-bottom: 10px;
+    transition: 0.5s;
+    border-bottom: 1px solid var(--second-color);
+}
+.coursesConta .courseT > div:hover {
+    background-color: #008586;
+}
+.coursesConta .courseT > div:hover a{
+    color: #fff;
+}
+.coursecont .progress {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border: 1px;
+    display: block;
+    height: 0.25rem;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 0px;
+    background-color: white;
+    margin-bottom: 2px;
+}
+.avatar2 {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: var(--third-color);
+    margin-right: 15px;
+    border: 1px dashed var(--second-color);
+    line-height: 60px;
+    font-size: 28px;
+    text-align: center;
+    color: var(--fourth-color);
+}
+.avatar2 i{
+    padding-left: 0
+}
+.exam {
+    padding: 10px 15px;
+    background: #fff;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+.exam:hover{
+    background-color: var(--third-color);
+    color: #fff
+}
+.exam progress{
+    background-color: var(--second-color) !important;
+    color: var(--third-color) !important;
+}
+@media screen and (min-width: 770px){
+    .chokoto {
+        min-height: 705px;
+    }
+}
+
+.trepto {
+    max-height: 605px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+
+.tata{
+    overflow-x:hidden;
+    padding-left: 10px;
+}
+
+.tata .sessionsCon{
+    border-bottom: 1px solid var(--third-color);
+    padding-bottom: 20px;
+}
+.sessionsCon .exam {
+    margin-left: 10px;
+}
+.sessionsCon .columns{
+    margin-top: 10px;
+}
+@media screen and (max-width: 770px){
+    .chokoto {
+        min-height: max-content !important;
+    }
+    .sessionsCon .exam {
+        margin-right: 0px !important;
+    }
+}

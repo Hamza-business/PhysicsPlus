@@ -68,3 +68,39 @@ function del(e){
     console.log(1)
     e.parentNode.remove()
 }
+
+function scontentB(){
+    let avatxt = document.getElementsByClassName("avaText")[0].textContent;
+    document.getElementsByClassName("avatar")[0].textContent = avatxt[0].toUpperCase()
+    let pProg = Array.from(document.querySelectorAll('.getprog'));
+    pProg.forEach((ele)=>{
+        let ele1 = ele;
+        let prev = ele.previousElementSibling.value;
+        ele1.textContent = `${prev}%`
+    })
+}
+
+
+function getDegrees(){
+    let finals = Array.from(document.getElementsByClassName("fDeg"));
+    let currDeg = Array.from(document.getElementsByClassName("deg"));
+    let progss = Array.from(document.getElementsByClassName("progrss"));
+    finals.forEach((ele,i)=>{
+        let max = ele.textContent;
+        let min = currDeg[i].textContent;
+        let res = min*100/max;
+        progss[i].value = res
+    })
+}
+
+function gethmwork(){
+    let homeworkState = Array.from(document.getElementsByClassName("hmworprog"));
+    homeworkState.forEach((ele,i)=>{
+        if(ele.value == "100"){
+            ele.previousElementSibling.textContent = "Finished"
+        }else{
+            ele.previousElementSibling.textContent = "Not Started"
+        }
+    })
+}
+
