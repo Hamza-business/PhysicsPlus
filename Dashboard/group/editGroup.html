@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>DashBoard</title>
+    <link rel="icon" type="image/x-icon" href="/assets/images/logo.jpeg">
+
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/assets/style/all.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/assets/style/bulma.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/assets/style/main.css'>
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/dataTables.bulma.min.css"/>
+</head>
+<body onclick="menu()">
+    <div class="Dcontent">
+        <nav class="bars hide">
+            <div class="icons">
+                <i class="fas fa-caret-left"></i>
+                <i class="fas fa-bars hide"></i>
+            </div>
+            <div class="Dpages">
+                <div class="pgitems"><a href="/Dashboard/main.html"><span class="icon"><i class="fa fa-home"></i> </span> Home</a></div>
+                <div class="pgitems"><a href="/Dashboard/admins.html"><span class="icon"><i class="fas fa-users-cog"></i> </span> Admins</a></div>
+                <div class="pgitems"><a href="/Dashboard/students.html"><span class="icon"><i class="fas fa-user-graduate"></i> </span> Students</a></div>
+                <div class="pgitems"><a href="/Dashboard/groups.html"><span class="icon"><i class="fas fa-th-large"></i> </span> Groups</a></div>
+                <div class="pgitems active"><a href="/Dashboard/courses.html"><span class="icon"><i class="fas fa-boxes"></i> </span> Courses</a></div>
+                <div class="pgitems"><a href="/Dashboard/questions.html"><span class="icon"><i class="fas fa-question"></i> </span> Questions</a></div>
+                <div class="pgitems"><a href="/Dashboard/courseRes.html"><span class="icon"><i class="fas fa-dollar-sign"></i> </span> Course Reservations</a></div>
+                <div class="pgitems"><a href="/Dashboard/organiReq.html"><span class="icon"><i class="far fa-building"></i> </span> Organization Requests</a></div>
+                <div class="pgitems"><a href="/Dashboard/notifications.html"><span class="icon"><i class="fas fa-bell"></i> </span> Notifications</a></div>
+            </div>
+        </nav>
+        <main class="maincontent">
+            <div class="infos is-flex is-flex-direction-row is-justify-content-space-between">
+                <div class="">
+                    <p class="title is-4">Groups</p>
+                    <p class="subtitle is-6"><a href="/Dashboard/main.html">Home</a> > <a href="/Dashboard/groups.html">Groups</a> > <span>Edit</span></p>
+                </div>
+            </div>
+            <div class="coursecontent columns">
+                <div class="column is-12">
+                    <div class="block">
+                        <form action="">
+                            <div class="columns is-multiline">
+                                <div class="column is-4">
+                                    <p class="subtitle is-6 heada">Title<span class="has-text-danger">*</span></p>
+                                    <div class="control">
+                                        <input class="input" type="input" required>
+                                    </div>
+                                </div>
+                                <div class="column is-4">
+                                    <p class="subtitle is-6 heada">Teacher<span class="has-text-danger">*</span></p>
+                                    <div class="select" style="width: 100%;">
+                                        <select name="Batch" class="select" id="Batch" style="width: 100%;">
+                                            <option value="Mohammed">Mr Mohammed</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="column is-4">
+                                    <p class="subtitle is-6 heada">Batch And Subject<span class="has-text-danger">*</span></p>
+                                    <div class="select" style="width: 100%;">
+                                        <select name="Batch" class="select" id="Batch" style="width: 100%;">
+                                            <option value="1Secondary">1st Secondary - Physics</option>
+                                            <option value="2Secondary">2nd Secondary - Physics</option>
+                                            <option value="3Secondary">3rd Secondary - Physics</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="column is-4">
+                                    <p class="subtitle is-6 heada">Admin<span class="has-text-danger">*</span></p>
+                                    <div class="select" style="width: 100%;">
+                                        <select name="Batch" class="select" id="Batch" style="width: 100%;">
+                                            <option value="Assisstant">Assisstant</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="button adder" style="font-size: 18px; padding:5px 30px">Update Group</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+    <style>
+        body{
+            padding: 0;
+            overflow-y: hidden;
+        }
+    </style>
+</body>
+</html>
+<script src="/assets/javascript/dashboard.js"></script>
