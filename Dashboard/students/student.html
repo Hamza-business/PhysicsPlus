@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>DashBoard</title>
+    <link rel="icon" type="image/x-icon" href="/assets/images/logo.jpeg">
+
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/assets/style/all.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/assets/style/bulma.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/assets/style/main.css'>
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/dataTables.bulma.min.css"/>
+</head>
+<body onclick="menu()">
+    <div class="Dcontent">
+        <nav class="bars">
+            <div class="icons">
+                <i class="fas fa-caret-left"></i>
+                <i class="fas fa-bars hide"></i>
+            </div>
+            <div class="Dpages">
+                <div class="pgitems"><a href="/Dashboard/main.html"><span class="icon"><i class="fa fa-home"></i> </span> Home</a></div>
+                <div class="pgitems"><a href="/Dashboard/admins.html"><span class="icon"><i class="fas fa-users-cog"></i> </span> Admins</a></div>
+                <div class="pgitems active"><a href="/Dashboard/students.html"><span class="icon"><i class="fas fa-user-graduate"></i> </span> Students</a></div>
+                <div class="pgitems"><a href="/Dashboard/groups.html"><span class="icon"><i class="fas fa-th-large"></i> </span> Groups</a></div>
+                <div class="pgitems"><a href="/Dashboard/courses.html"><span class="icon"><i class="fas fa-boxes"></i> </span> Courses</a></div>
+                <div class="pgitems"><a href="/Dashboard/questions.html"><span class="icon"><i class="fas fa-question"></i> </span> Questions</a></div>
+                <div class="pgitems"><a href="/Dashboard/courseRes.html"><span class="icon"><i class="fas fa-dollar-sign"></i> </span> Course Reservations</a></div>
+                <div class="pgitems"><a href="/Dashboard/organiReq.html"><span class="icon"><i class="far fa-building"></i> </span> Organization Requests</a></div>
+                <div class="pgitems"><a href="/Dashboard/notifications.html"><span class="icon"><i class="fas fa-bell"></i> </span> Notifications</a></div>
+            </div>
+        </nav>
+        <main class="maincontent">
+            <div class="infos is-flex is-flex-direction-row is-justify-content-space-between">
+                <div class="">
+                    <p class="title is-4">Student</p>
+                    <p class="subtitle is-6"><a href="/Dashboard/main.html">Home</a> > <a href="/Dashboard/students.html">Students</a> > 4101</p>
+                </div>
+            </div>
+            <div class="coursecontent columns">
+                <div class="column is-3">
+                    <div class="courseSD has-text-centered">
+                        <div class="avatar"></div>
+                        <p class="title is-5 has-text-weight-bold avaText">Hamza</p>
+                        <p><span>Cairo</span><span>,</span> Egypt</p>
+                    </div>
+                    <p class="subtitle is-6 heada">About Student</p>
+                    <div class="basicInfo">
+                        <p class="subtitle is-6">Education Level: <br><span>School</span></p>
+                        <p class="subtitle is-6">School Name: <br><span>E Secondary</span></p>
+                        <p class="subtitle is-6">School Level: <br><span>Secondary - 3rdSecondary</span></p>
+                        <p class="subtitle is-6">Email: <br><span>mmostafa261@gmail.com</span></p>
+                        <p class="subtitle is-6">Mobile Number: <br>
+                            <span>01232423423</span><br>
+                            <span>35454543534</span><br>
+                        </p>
+                        <p class="subtitle is-6">Home Number: <br><span>01232423423</span></p>
+                        <p class="subtitle is-6">Address: <br>
+                            <span>Sedo beshr</span><br>
+                            <span>Ahmado KSA</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="column is-9">
+                    <p class="subtitle is-6 heada">Content</p>
+                    <div class="coursecont" id="materials">
+                        <div class="sectionSelect">
+                            <a href="#Courses" class="active">Courses</a>
+                            <a href="#Groups">Groups</a>
+                        </div>
+
+                        <div class="csections active" id="Courses">
+                            <p class="subtitle is-6 heada">Courses</p>
+                            <table id="CoursesT" class="table is-striped" style="width:100%; min-width: 900px">
+                                <thead>
+                                    <tr>
+                                        <th>Receipt Number</th>
+                                        <th>Course</th>
+                                        <th>Payment</th>
+                                        <th>Payment Date</th>
+                                        <th>Admin</th>
+                                        <th>Status</th>
+                                        <th>Controle</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>893242839475201135</td>
+                                        <td class="msg">Chapter 2 - Part 1</td>
+                                        <td>0.0</td>
+                                        <td>25 Oct 22 04:29PM</td>
+                                        <td>Mr Mohammed</td>
+                                        <td><span class="tag is-light is-primary">Accepted</span></td>
+                                        <td>
+                                            <button class="button is-small"><i class="fas fa-eye"></i></button>
+                                            <a class="button is-small" href="questions/queEdit.html"><i class="fas fa-pencil-alt"></i></a>
+                                            <button class="button is-small"><i class="fas fa-trash-alt"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>893242839475201135</td>
+                                        <td class="msg">Chapter 2 - Part 1</td>
+                                        <td>0.0</td>
+                                        <td>25 Oct 22 04:29PM</td>
+                                        <td>Mr Mohammed</td>
+                                        <td><span class="tag is-light is-warning">Pending</span></td>
+                                        <td>
+                                            <button class="button is-small"><i class="fas fa-eye"></i></button>
+                                            <a class="button is-small" href="questions/queEdit.html"><i class="fas fa-pencil-alt"></i></a>
+                                            <button class="button is-small"><i class="fas fa-trash-alt"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>893242839475201135</td>
+                                        <td class="msg">Chapter 2 - Part 1</td>
+                                        <td>0.0</td>
+                                        <td>25 Oct 22 04:29PM</td>
+                                        <td>Mr Mohammed</td>
+                                        <td><span class="tag is-light is-danger">Declined</span></td>
+                                        <td>
+                                            <button class="button is-small"><i class="fas fa-eye"></i></button>
+                                            <a class="button is-small" href="questions/queEdit.html"><i class="fas fa-pencil-alt"></i></a>
+                                            <button class="button is-small"><i class="fas fa-trash-alt"></i></button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="csections" id="Groups">
+                            <p class="subtitle is-6 heada">Groups</p>
+                            <table id="GroupsT" class="table is-striped" style="width:100%; min-width: 926px">
+                                <thead>
+                                    <tr>
+                                        <th>Title</th>
+                                        <th>Teacher</th>
+                                        <th>Admin</th>
+                                        <th>controle</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="msg">Lorem ipsum dolor, sit consectetur adipisicing.</td>
+                                        <td>Mr Mohammde Ali</td>
+                                        <td>Hamza</td>
+                                        <td><button class="button is-small"><i class="fas fa-trash-alt"></i></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="msg">Lorem ipsum dolor, sit consectetur adipisicing.</td>
+                                        <td>Mr Mohammde Ali</td>
+                                        <td>Hamza</td>
+                                        <td><button class="button is-small"><i class="fas fa-trash-alt"></i></button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>  
+
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+    <style>
+        body{
+            padding: 0;
+            overflow-y: hidden;
+        }
+    </style>
+</body>
+</html>
+<script src="/assets/javascript/dashboard.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.1/js/dataTables.bulma.min.js"></script>
+<script>
+$(document).ready(function () {
+    $('#CoursesT').DataTable();
+    $('#GroupsT').DataTable();
+});
+maxch()
+scontentB()
+</script>

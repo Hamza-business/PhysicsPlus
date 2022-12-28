@@ -1557,3 +1557,8 @@ td img {
         margin-right: 0px !important;
     }
 }
+.input, .textarea {
+  background-color: #f0f2f4;
+  border-color: var(--third-color);
+  color: var(--third-color) !important;
+}
