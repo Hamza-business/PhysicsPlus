@@ -1562,3 +1562,172 @@ td img {
   border-color: var(--third-color);
   color: var(--third-color) !important;
 }
+
+
+
+.lview .hero {
+    background-color: #043635;
+}
+.lview .column.is-8 {
+    padding: 40px;
+}
+.lview .urls{
+    color: #11a8a8;
+    font-size: 17px;
+    font-weight: 600;
+}
+.lview .hero p {
+    color: var(--fourth-color);
+    margin-bottom: 14px !important;
+}
+.lview .urls a {
+    color: #11a8a8;
+    text-decoration: underline !important;
+}
+.lview .hero {
+    margin-bottom: 25px
+}
+.lview .hero .title.is-101{
+    font-size: 2.3rem;
+}
+.lview .hero .subtitle.is-5 {
+    font-size: 1.15rem !important;
+}
+.lview .hero  .sumInfo{
+    color: #11a8a8;
+    margin-bottom: 0 !important;
+    padding-top: 0 !important;
+}
+.infoos {
+    display: flex;
+    justify-content: space-between;
+}
+.cBox {
+    padding: 30px;
+    background-color: var(--fourth-color);
+    margin-top: 35px;
+}
+.cBox *{
+    color: var(--second-color) !important
+}
+.courseData{
+    position: relative;
+}
+.courseData > .column.is-8 {
+    padding-left: 10px !important;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+ul, ul *{
+    list-style: inside !important;
+    font-size: 17px;
+}
+.Ldescription{
+    margin-top: 8px !important;
+    margin-bottom: 10px !important;
+}
+.courseData .column.is-3 {
+    border: 2px solid var(--third-color);
+    padding: 0;
+    position: absolute;
+    top: -250px;
+    right: 65px;
+    background-color: var(--fourth-color);
+}
+.courseData .column.is-3 img {
+    height: auto;
+    width: 100%;
+}
+.courseData .column.is-3 .courseDC{
+    padding: 16px 22px;
+}
+.courseData .column.is-3 .courseDC .price {
+    margin-bottom: 8px;
+}
+.cBox .title{
+    margin-bottom: 5px;
+}
+@media screen and (min-width: 769px), print{
+    .courseData .column.is-3, .courseData .column.is-3-tablet {
+        flex: none;
+        width: 27%;
+    }
+}
+.oPrice{
+    text-decoration: line-through;
+    text-decoration-color: var(--third-color);
+    text-decoration-thickness: 3px;
+    margin-bottom: 5px;
+}
+.buy{
+    background-color: var(--third-color);
+    color: #fff;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    transition: 0.5s;
+}
+.buy:hover{
+    background-color: var(--second-color);
+    color: #fff;
+}
+.coC{
+    margin-top: 6px;
+    margin-bottom: 16px !important;
+}
+.coC .title{
+    font-size: 1.55rem;
+    padding-bottom: 6px;
+}
+.coC .subtitle{
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+@media screen and (max-width: 900px), print{
+    .courseData .column.is-3 {
+        top: -250px;
+        right: 25px;
+    }
+    .courseData .column.is-3, .courseData .column.is-3-tablet {
+        width: 32% !important;
+    }
+    .courseData .column.is-3 .courseDC {
+        padding: 16px 16px;
+    }
+}
+@media screen and (max-width: 770px), print{
+    .courseData .column.is-3 {
+        position: relative;
+        top: auto;
+        right: auto;
+    }
+    .courseData .column.is-3, .courseData .column.is-3-tablet {
+        margin-top: 14px;
+        width: 97% !important;
+        margin-left: 11px;
+    }
+    .courseData .column.is-3 .courseDC {
+        padding: 16px 16px;
+    }
+    .courseData > .column.is-8 {
+        padding-right: 10px;
+    }
+    .columns.courseData {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+@media screen and (max-width: 560px), print{
+    .courseData .column.is-3, .courseData .column.is-3-tablet {
+        width: 96% !important;
+    }
+}
+@media screen and (max-width: 460px), print{
+    .infoos{
+        display: block;
+    }
+    .courseData .column.is-3, .courseData .column.is-3-tablet {
+        width: 95% !important;
+    }
+}
