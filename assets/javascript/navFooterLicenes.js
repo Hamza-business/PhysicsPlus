@@ -1,4 +1,5 @@
-document.body.querySelector(".navbar").innerHTML +=`
+try{
+    document.body.querySelector(".navbar").innerHTML +=`
 <div class="navbar-brand">
     <a class="navbar-item logo" href="/">
         <img src="/assets/images/logo.jpeg">
@@ -44,6 +45,9 @@ document.body.querySelector(".navbar").innerHTML +=`
     </div>
 </div>
 `
+}catch(e){
+    e
+}
 
 try{
     document.body.querySelector(".footer").innerHTML +=`
@@ -97,6 +101,12 @@ try{
     `
     
     
+}catch(re){
+    re
+}
+
+
+try{
     document.body.querySelector(".licens").innerHTML +=`
     <div class="container is-fluid">
         <div class="has-text-centered">
@@ -108,9 +118,8 @@ try{
         </div>
     </div>
     `
-}catch(re){
-    re
-}
+}catch(e){e}
+
 
 function navshow(){
     if (document.getElementById('navbarBasicExample').style.display == 'block'){
