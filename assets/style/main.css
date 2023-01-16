@@ -1354,7 +1354,7 @@ table .button.is-small i {
     grid-template-columns: 1em auto;
     gap: 0.5em;
 }
-input[type="checkbox"] {
+input[type="checkbox"], input[type="radio"]{
     -webkit-appearance: none;
     appearance: none;
     background-color: #fff;
@@ -1367,14 +1367,18 @@ input[type="checkbox"] {
     border-radius: 0.15em;
     transform: translateY(-0.075em);
 }
+input[type="radio"]{
+    border-radius: 50%;
+    margin-left: 6px;
+}
 .form-control + .form-control {
     margin-top: 1em;
 }
-input[type="checkbox"] {
+input[type="checkbox"], input[type="radio"] {
   display: grid;
   place-content: center;
 }
-input[type="checkbox"]::before {
+input[type="checkbox"]::before, input[type="radio"]::before {
     content: "";
     width: 0.65em;
     height: 0.65em;
@@ -1386,7 +1390,7 @@ input[type="checkbox"] {
     display: grid;
     place-content: center;
 }
-  input[type="checkbox"]::before {
+input[type="checkbox"]::before, input[type="radio"]::before  {
     content: "";
     width: 0.65em;
     height: 0.65em;
@@ -1394,10 +1398,13 @@ input[type="checkbox"] {
     transition: 120ms transform ease-in-out;
     box-shadow: inset 1em 1em var(--form-control-color);
 }
-input[type="checkbox"]:checked::before {
+input[type="checkbox"]:checked::before, input[type="radio"]:checked::before {
     transform: scale(1);
 }
-input[type="checkbox"]::before {
+input[type="radio"]:checked::before {
+    border-radius: 50%;
+}
+input[type="checkbox"]::before, input[type="radio"]::before {
     background-color: var(--third-color);
 }
 .file .file-cta, .file-label:hover .file-cta{
@@ -1751,7 +1758,7 @@ ul, ul *{
     background-color: var(--main-color);
     color: #fff !important;
 }
-.features .gridSys.c2 {
+.LastLec .features .gridSys.c2 {
     display: grid;
     grid-template-columns: var(--main-grid);
     grid-gap: 40px;
@@ -1822,38 +1829,59 @@ ul, ul *{
 .lectViews {
     margin-bottom: 0 !important;
     margin-top: 0px;
+    height: 100vh;
 }
 .lectViews .contentMenu {
     padding: 0;
     margin-top: 3px;
 }
-.lectViews .column.is-3 {
-    background-color: aliceblue;
+.lectViews .column.is-2 {
+    background-color: var(--fourth-color);
     padding-bottom: 0;
-    height: auto;
-    max-height: 1300px;
-    overflow-y: scroll;
+    height: 100vh;
+    overflow-y: auto;
     scrollbar-width: thin;
+    padding-right: 1px;
+    padding: 10px 12px 10px 22px;
+}
+.lecter {
+    padding: 8px 20px;
+    margin-bottom: 5px;
+    background-color: var(--third-color);
+    color: var(--main-color);
+    border-radius: 5px;
+    cursor:pointer;
+}
+.lecter.end {
+    opacity: 0.98;
+    background-color:#054849
+}
+.lecter.current {
+    opacity: 0.98;
+    border: 2px solid #07696b;
+    background-color: #035f61a6;
+    color: var(--main-color);
+}
+.lectViews .column.is-10 {
+    height: 100vh;
+    overflow-y: auto;
+    padding-bottom: 60px;
+    position: relative;
+    padding-right: 20px;
 }
 .contentMenu .is-size-4{
-    font-weight: 700;
+    font-weight: 600;
     padding: 5px 10px 2px;
+    color: var(--second-color);
 }
-.chapter {
-    border-bottom: 2px solid var(--third-color);
-}
-.lectura {
-    padding: 5px 10px;
-    transition: 0.4s;
-    cursor: pointer;
-}
-.lectura:hover {
-    background-color: azure;
+.cTtile{
+    color: var(--main-color)
 }
 .videoL iframe{
     width: 100%;
     height: 500px;
 }
+
 
 
 
@@ -1866,8 +1894,6 @@ ul, ul *{
 .tapss1 .discription{
     padding-left: 10px;
     font-size: 17px;
-    max-height: 380px;
-    overflow-y:auto;
     scrollbar-width: thin;
 }
 .tapss1 .discription img{
@@ -1887,7 +1913,7 @@ ul, ul *{
     display: none;
 }
 .mytabs .tabfree {
-    padding: 12px 50px;
+    padding: 10px 40px;
     color: var(--second-color);
     font-weight: bold;
     border-radius: 6px 6px 0 0;
@@ -1909,6 +1935,7 @@ ul, ul *{
 }
 .mytabs .title.is-3{
     margin-bottom: 0.5rem;
+    color:var(--second-color);
 }
 .lNav {
     width: 100%;
@@ -1928,32 +1955,235 @@ ul, ul *{
     text-decoration: underline;
     opacity: 0.8;
 }
+.showr{
+    display: none;
+}
 
-@media screen and (max-width: 900px), print{
-    .lNav.navbar-menu {
-        display: block !important;
+
+@media screen and (max-width: 960px), print{
+    .lNav {
+        align-items: baseline !important;
+        display: flex !important;
     }
+    .navbar-start {
+        justify-content: flex-start;
+        margin-right: auto;
+    }
+    .showr{
+        display: block;
+        position: absolute;
+        right: 30px;
+        font-size: 22px;
+        color: var(--third-color);
+        top: 18px;
+        cursor: pointer;
+    }
+    .hidelectS{
+        width: 0 !important;
+        padding: 0 !important;
+        flex-basis: 0;
+        flex-grow: 0;
+        flex-shrink: 0;
+        position: absolute;
+        z-index: 0;
+    }
+    .hidelectS *{
+        opacity: 0;
+        transition: 0.5s;
+    }
+    .lectViews .column.is-10{
+        width: 100% !important;
+        padding: 10px 30px;
+        transition: 0.5s;
+    }
+    .lectViews .column.is-2 {
+        padding-bottom: 0;
+        width: 220px;
+        position: absolute;
+        z-index: 200;
+        transition: 0.5s;
+        padding-right: 10px;
+    }
+    .columns.lectViews {
+        display: flex;
+    }
+    .mytabs .tabfree {
+        padding: 10px 35px;
+    }
+}
+@media screen and (max-width: 700px), print{
+    .videoL iframe{
+        height: 400px;
+    }
+    .mytabs .tabfree {
+        padding: 8px 20px;
+    }
+    .navbar-start {
+        width: 80%;
+    }
+    .ert {
+        word-wrap: break-word ;
+        overflow-wrap: break-word ;
+        overflow: hidden;
+        white-space: normal;
+        text-overflow: ellipsis;
+        width: 100%;
+        height: 30px;
+    }
+}
+@media screen and (max-width: 600px), print{
+    .videoL iframe{
+        height: 335px;
+    }
+    .lNav .navbar-end .navbar-item {
+        display: flex !important;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 510px), print{
+    .videoL iframe{
+        height: 300px;
+    }
+}
+@media screen and (max-width: 460px), print{
+    .videoL iframe{
+        height: 270px;
+    }
+}
+@media screen and (max-width: 420px), print{
+    .videoL iframe{
+        height: 230px;
+    }
+    .mytabs .tabfree {
+        padding: 6px 10px;
+    }
+}
+@media screen and (max-width: 360px), print{
+    .videoL iframe{
+        height: 180px;
+    }
+}
+
+
+
+.hero-Lect {
+    background-size: 130%;
+}
+.hero-Lect .hero-body {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 2rem 3rem;
+}
+.has-text-third{
+    color: #01afaf
+}
+.panel{
+    margin-bottom: 0 !important;
+    margin-top: 60px;
+    box-shadow: 0 0.4em 0.8em -0.125em rgba(10, 100, 100, 0.3), 0 0px 0 1px rgba(10, 100, 100, 0.04);
+}
+.panel .panel-block {
+    background: #ededed;
+    position: relative;
+}
+.Lects .gridSys{
+    margin-top: 0;
+}
+.Lects .Moqtarh {
+    margin-top: 50px;
+}
+.alects .card{
+    display: none;
+}
+.alects .card.filtered.active{
+    display: block;
+}
+.alects .card .subtitle.is-4{
+    margin-bottom: 10px;
+}
+.alects .card .tag.is-primary {
+  background-color: var(--third-color) !important;
+  margin-bottom: 6px;
+  opacity: 0.8;
 }
 @media screen and (max-width: 770px), print{
-    .lectViews .column.is-3 {
-        background-color: aliceblue;
-        padding-bottom: 0;
-        height: auto;
-        max-height: 400px;
-        overflow-y: scroll;
-        scrollbar-width: thin;
-    }
-}
-@media screen and (max-width: 500px), print{
-    .videoL iframe {
-        height: 340px;
+    .hero-Lect {
+        background-size: 170%;
     }
 }
 @media screen and (max-width: 400px), print{
-    .videoL iframe {
-        height: 300px;
-    }
-    .mytabs .tabfree {
-        padding: 12px 15px;
+    .hero-Lect {
+        background-size: 300%;
     }
 }
+.panel-heading{
+    padding-bottom: 5px;
+    padding-left: 15px;
+    color: var(--second-color);
+}
+.filtering{
+    padding-right: 26px;
+    margin-left: -4px;
+    margin-bottom: 6px;
+    cursor: pointer;
+    color: var(--second-color);
+}
+.seBoxes{
+    height: max-content;
+    width: max-content;
+    position: absolute;
+    background: #ededed;
+    top: 46px;
+    z-index: 200;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0 0.4em 0.8em -0.125em rgba(10, 100, 100, 0.3), 0 0px 0 1px rgba(10, 100, 100, 0.04);
+    display: none;
+    padding: 14px 12px 4px 4px;
+}
+.seBoxes label{
+    display: flex;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.seBoxes label input{
+    margin-right: 0px !important;
+}
+.seBoxes label input::before {
+    height: 0.7em;
+    width: 0.7em;
+    border-radius: 2px;
+}
+.b1.active{
+    display: block;
+    left: 14px;
+}
+.b2.active{
+    display: block;
+    left: 166px;
+}
+
+
+.pagesCount {
+    display: flex;
+    justify-content: center;
+}
+.pagesCount p {
+    background-color: var(--third-color);
+    color: var(--fourth-color);
+    border-radius: 5px;
+    min-width: 40px;
+    min-height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 22px;
+    cursor: pointer;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.pagesCount p.active {
+    opacity: 0.98;
+    background-color: #054849;
+}
+
+
+

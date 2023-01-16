@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="/assets/images/logo.jpeg">
+        <title>Physics Plus +</title>
+        <link rel="stylesheet" href="/assets/style/bulma.css"/>
+        <link rel="stylesheet" href="/assets/style/main.css"/>
+        <link rel="stylesheet" href="/assets/style/all.min.css"/>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/animations.min.css" integrity="sha512-GKHaATMc7acW6/GDGVyBhKV3rST+5rMjokVip0uTikmZHhdqFWC7fGBaq6+lf+DOS5BIO8eK6NcyBYUBCHUBXA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="navsect">
+        </div>
+        <nav class="navbar" role="navigation" aria-label="main navigation" id="navBar">
+        </nav>
+        
+
+        <section class="about hero hero-Lect block bordered">
+            <div class="hero-body nomarg">
+                <div class="has-text-centered">
+                    <h1 class="title is-1 has-text is-red">Lectures</h1>
+                    <h3 class="title is-5 has-text is-red">Watch > Learn > Succed</h3>
+                    <div class="has-text-centered">
+                        <a href="/" class="has-text-white"> Home </a> <span class="has-text-white">/</span> <span class="has-text-third"> Lectures </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    
+        <article class="panel">
+            <p class="panel-heading is-bg-red">Seacrh & Filter</p>
+            <div class="panel-block">
+              <p class="control has-icons-left">
+                <input class="input" type="text" placeholder="Search with keywords" onchange="setTtile(this.value)">
+                <span class="icon is-left">
+                    <i class="fas fa-search is-red"></i></span>
+              </p>
+            </div>
+            <div class="panel-block">
+                <p class="filtering sYear" onclick="document.querySelector('.b1').classList.toggle('active')"><i class="fas fa-filter"></i> Secondary Year</p>
+                <div class="seBoxes b1">
+                    <label class="checkbox form-control"><label for="fy"><input type="radio" id="fy" name="year" onchange="setYear('First Year')"></label>First Year</label>
+                    <label class="checkbox form-control"><label for="sy"><input type="radio" id="sy" name="year" onchange="setYear('Second Year')"></label>Second Year</label>
+                    <label class="checkbox form-control"><label for="ty"><input type="radio" id="ty" name="year" onchange="setYear('Third Year')"></label>Third Year</label>
+                </div>
+                <p class="filtering sStage" onclick="document.querySelector('.b2').classList.toggle('active')"><i class="fas fa-filter"></i> Secondary Stage</p>
+                <div class="seBoxes b2">
+                    <label class="checkbox form-control"><label for="fs"><input type="radio" id="fs" name="stage" onchange="setStage('First Stage')"></label>First Stage</label>
+                    <label class="checkbox form-control"><label for="ss"><input type="radio" id="ss" name="stage" onchange="setStage('Second Stage')"></label>Second Stage</label>
+                </div>
+            </div>
+        </article>
+    
+
+        <section class="Cards1 block Lects alects">
+            <section class="Moqtarh features LastLec">
+                <div class="block">
+                    <div class="gridSys">
+                        <div class="card filtered">
+                            <div class="card-image">
+                                <img src="https://via.placeholder.com/500x300 "alt="image">
+                            </div>
+                            <div class="card-content">
+                                <p class="title is-5">Most Advanced Physics Rules, wil make you better</p>
+                                <p class="subtitle is-6">Mohammed Ali</p>
+                                <p class="subtitle is-6">1st Secondary</p>
+                                <p class="subtitle is-6">5 Hours of video</p>
+                                <p class="subtitle is-4">EGP 50</p>
+                                <span class="tag year is-primary">First Year</span>
+                                <span class="tag stage is-primary">First Stage</span>
+                            </div>
+                            <a href="#" class="card-footer-item button is-bg-red is-fullwidth buy">Go to Lecture</a>
+                        </div>
+                        
+                        <div class="card filtered">
+                            <div class="card-image">
+                                <img src="https://via.placeholder.com/500x300 "alt="image">
+                            </div>
+                            <div class="card-content">
+                                <p class="title is-5">Most Advanced Physics Rules, wil make you better</p>
+                                <p class="subtitle is-6">Mohammed Ali</p>
+                                <p class="subtitle is-6">1st Secondary</p>
+                                <p class="subtitle is-6">5 Hours of video</p>
+                                <p class="subtitle is-4">EGP 50</p>
+                                <span class="tag year is-primary">First Year</span>
+                                <span class="tag stage is-primary">Second Stage</span>
+                            </div>
+                            <a href="#" class="card-footer-item button is-bg-red is-fullwidth buy">Go to Lecture</a>
+                        </div>
+
+                        <div class="card filtered">
+                            <div class="card-image">
+                                <img src="https://via.placeholder.com/500x300 "alt="image">
+                            </div>
+                            <div class="card-content">
+                                <p class="title is-5">Most Advanced Physics Rules, wil make you better</p>
+                                <p class="subtitle is-6">Mohammed Ali</p>
+                                <p class="subtitle is-6">1st Secondary</p>
+                                <p class="subtitle is-6">5 Hours of video</p>
+                                <p class="subtitle is-4">EGP 50</p>
+                                <span class="tag year is-primary">Second Year</span>
+                                <span class="tag stage is-primary">First Stage</span>
+                            </div>
+                            <a href="#" class="card-footer-item button is-bg-red is-fullwidth buy">Go to Lecture</a>
+                        </div>
+
+                        <div class="card filtered">
+                            <div class="card-image">
+                                <img src="https://via.placeholder.com/500x300 "alt="image">
+                            </div>
+                            <div class="card-content">
+                                <p class="title is-5">Most Advanced Physics Rules, wil make you better</p>
+                                <p class="subtitle is-6">Mohammed Ali</p>
+                                <p class="subtitle is-6">1st Secondary</p>
+                                <p class="subtitle is-6">5 Hours of video</p>
+                                <p class="subtitle is-4">EGP 50</p>
+                                <span class="tag year is-primary">Second Year</span>
+                                <span class="tag stage is-primary">Second Stage</span>
+                            </div>
+                            <a href="#" class="card-footer-item button is-bg-red is-fullwidth buy">Go to Lecture</a>
+                        </div>
+
+                        <div class="card filtered">
+                            <div class="card-image">
+                                <img src="https://via.placeholder.com/500x300 "alt="image">
+                            </div>
+                            <div class="card-content">
+                                <p class="title is-5">Most Advanced Physics Rules, wil make you better</p>
+                                <p class="subtitle is-6">Mohammed Ali</p>
+                                <p class="subtitle is-6">1st Secondary</p>
+                                <p class="subtitle is-6">5 Hours of video</p>
+                                <p class="subtitle is-4">EGP 50</p>
+                                <span class="tag year is-primary">Third Year</span>
+                                <span class="tag stage is-primary">First Stage</span>
+                            </div>
+                            <a href="#" class="card-footer-item button is-bg-red is-fullwidth buy">Go to Lecture</a>
+                        </div>
+                        
+                        <div class="card filtered">
+                            <div class="card-image">
+                                <img src="https://via.placeholder.com/500x300 "alt="image">
+                            </div>
+                            <div class="card-content">
+                                <p class="title is-5">Most Advanced Physics Rules, wil make you better</p>
+                                <p class="subtitle is-6">Mohammed Ali</p>
+                                <p class="subtitle is-6">1st Secondary</p>
+                                <p class="subtitle is-6">5 Hours of video</p>
+                                <p class="subtitle is-4">EGP 50</p>
+                                <span class="tag year is-primary">Third Year</span>
+                                <span class="tag stage is-primary">Second Stage</span>
+                            </div>
+                            <a href="#" class="card-footer-item button is-bg-red is-fullwidth buy">Go to Lecture</a>
+                        </div>
+
+                        <div class="card filtered">
+                            <div class="card-image">
+                                <img src="https://via.placeholder.com/500x300 "alt="image">
+                            </div>
+                            <div class="card-content">
+                                <p class="title is-5">Most Advanced Physics Rules, wil make you better</p>
+                                <p class="subtitle is-6">Mohammed Ali</p>
+                                <p class="subtitle is-6">1st Secondary</p>
+                                <p class="subtitle is-6">5 Hours of video</p>
+                                <p class="subtitle is-4">EGP 50</p>
+                                <span class="tag year is-primary">First Year</span>
+                                <span class="tag stage is-primary">First Stage</span>
+                            </div>
+                            <a href="#" class="card-footer-item button is-bg-red is-fullwidth buy">Go to Lecture</a>
+                        </div>
+                        
+                        <div class="card filtered">
+                            <div class="card-image">
+                                <img src="https://via.placeholder.com/500x300 "alt="image">
+                            </div>
+                            <div class="card-content">
+                                <p class="title is-5">Most Advanced Physics Rules, wil make you better</p>
+                                <p class="subtitle is-6">Mohammed Ali</p>
+                                <p class="subtitle is-6">1st Secondary</p>
+                                <p class="subtitle is-6">5 Hours of video</p>
+                                <p class="subtitle is-4">EGP 50</p>
+                                <span class="tag year is-primary">First Year</span>
+                                <span class="tag stage is-primary">Second Stage</span>
+                            </div>
+                            <a href="#" class="card-footer-item button is-bg-red is-fullwidth buy">Go to Lecture</a>
+                        </div>
+
+                        <div class="card filtered">
+                            <div class="card-image">
+                                <img src="https://via.placeholder.com/500x300 "alt="image">
+                            </div>
+                            <div class="card-content">
+                                <p class="title is-5">Most Advanced Physics Rules, wil make you better</p>
+                                <p class="subtitle is-6">Mohammed Ali</p>
+                                <p class="subtitle is-6">1st Secondary</p>
+                                <p class="subtitle is-6">5 Hours of video</p>
+                                <p class="subtitle is-4">EGP 50</p>
+                                <span class="tag year is-primary">Second Year</span>
+                                <span class="tag stage is-primary">First Stage</span>
+                            </div>
+                            <a href="#" class="card-footer-item button is-bg-red is-fullwidth buy">Go to Lecture</a>
+                        </div>
+
+                        <div class="card filtered">
+                            <div class="card-image">
+                                <img src="https://via.placeholder.com/500x300 "alt="image">
+                            </div>
+                            <div class="card-content">
+                                <p class="title is-5">Most Advanced Physics Rules, wil make you better</p>
+                                <p class="subtitle is-6">Mohammed Ali</p>
+                                <p class="subtitle is-6">1st Secondary</p>
+                                <p class="subtitle is-6">5 Hours of video</p>
+                                <p class="subtitle is-4">EGP 50</p>
+                                <span class="tag year is-primary">Second Year</span>
+                                <span class="tag stage is-primary">Second Stage</span>
+                            </div>
+                            <a href="#" class="card-footer-item button is-bg-red is-fullwidth buy">Go to Lecture</a>
+                        </div>
+
+                        <div class="card filtered">
+                            <div class="card-image">
+                                <img src="https://via.placeholder.com/500x300 "alt="image">
+                            </div>
+                            <div class="card-content">
+                                <p class="title is-5">Most Advanced Physics Rules, wil make you better</p>
+                                <p class="subtitle is-6">Mohammed Ali</p>
+                                <p class="subtitle is-6">1st Secondary</p>
+                                <p class="subtitle is-6">5 Hours of video</p>
+                                <p class="subtitle is-4">EGP 50</p>
+                                <span class="tag year is-primary">Third Year</span>
+                                <span class="tag stage is-primary">First Stage</span>
+                            </div>
+                            <a href="#" class="card-footer-item button is-bg-red is-fullwidth buy">Go to Lecture</a>
+                        </div>
+                        
+                        <div class="card filtered">
+                            <div class="card-image">
+                                <img src="https://via.placeholder.com/500x300 "alt="image">
+                            </div>
+                            <div class="card-content">
+                                <p class="title is-5">Most Advanced Physics Rules, wil make you better</p>
+                                <p class="subtitle is-6">Mohammed Ali</p>
+                                <p class="subtitle is-6">1st Secondary</p>
+                                <p class="subtitle is-6">5 Hours of video</p>
+                                <p class="subtitle is-4">EGP 50</p>
+                                <span class="tag year is-primary">Third Year</span>
+                                <span class="tag stage is-primary">Second Stage</span>
+                            </div>
+                            <a href="#" class="card-footer-item button is-bg-red is-fullwidth buy">Go to Lecture</a>
+                        </div>
+
+                        <div class="card filtered">
+                            <div class="card-image">
+                                <img src="https://via.placeholder.com/500x300 "alt="image">
+                            </div>
+                            <div class="card-content">
+                                <p class="title is-5">Most Advanced Physics Rules, wil make you better</p>
+                                <p class="subtitle is-6">Mohammed Ali</p>
+                                <p class="subtitle is-6">1st Secondary</p>
+                                <p class="subtitle is-6">5 Hours of video</p>
+                                <p class="subtitle is-4">EGP 50</p>
+                                <span class="tag year is-primary">First Year</span>
+                                <span class="tag stage is-primary">First Stage</span>
+                            </div>
+                            <a href="#" class="card-footer-item button is-bg-red is-fullwidth buy">Go to Lecture</a>
+                        </div>
+                        
+                        <div class="card filtered">
+                            <div class="card-image">
+                                <img src="https://via.placeholder.com/500x300 "alt="image">
+                            </div>
+                            <div class="card-content">
+                                <p class="title is-5">Most Advanced Physics Rules, wil make you better</p>
+                                <p class="subtitle is-6">Mohammed Ali</p>
+                                <p class="subtitle is-6">1st Secondary</p>
+                                <p class="subtitle is-6">5 Hours of video</p>
+                                <p class="subtitle is-4">EGP 50</p>
+                                <span class="tag year is-primary">First Year</span>
+                                <span class="tag stage is-primary">Second Stage</span>
+                            </div>
+                            <a href="#" class="card-footer-item button is-bg-red is-fullwidth buy">Go to Lecture</a>
+                        </div>
+
+                        <div class="card filtered">
+                            <div class="card-image">
+                                <img src="https://via.placeholder.com/500x300 "alt="image">
+                            </div>
+                            <div class="card-content">
+                                <p class="title is-5">Most Advanced Physics Rules, wil make you better</p>
+                                <p class="subtitle is-6">Mohammed Ali</p>
+                                <p class="subtitle is-6">1st Secondary</p>
+                                <p class="subtitle is-6">5 Hours of video</p>
+                                <p class="subtitle is-4">EGP 50</p>
+                                <span class="tag year is-primary">Second Year</span>
+                                <span class="tag stage is-primary">First Stage</span>
+                            </div>
+                            <a href="#" class="card-footer-item button is-bg-red is-fullwidth buy">Go to Lecture</a>
+                        </div>
+
+                        <div class="card filtered">
+                            <div class="card-image">
+                                <img src="https://via.placeholder.com/500x300 "alt="image">
+                            </div>
+                            <div class="card-content">
+                                <p class="title is-5">Most Advanced Physics Rules, wil make you better</p>
+                                <p class="subtitle is-6">Mohammed Ali</p>
+                                <p class="subtitle is-6">1st Secondary</p>
+                                <p class="subtitle is-6">5 Hours of video</p>
+                                <p class="subtitle is-4">EGP 50</p>
+                                <span class="tag year is-primary">Second Year</span>
+                                <span class="tag stage is-primary">Second Stage</span>
+                            </div>
+                            <a href="#" class="card-footer-item button is-bg-red is-fullwidth buy">Go to Lecture</a>
+                        </div>
+
+                        <div class="card filtered">
+                            <div class="card-image">
+                                <img src="https://via.placeholder.com/500x300 "alt="image">
+                            </div>
+                            <div class="card-content">
+                                <p class="title is-5">Most Advanced Physics Rules, wil make you better</p>
+                                <p class="subtitle is-6">Mohammed Ali</p>
+                                <p class="subtitle is-6">1st Secondary</p>
+                                <p class="subtitle is-6">5 Hours of video</p>
+                                <p class="subtitle is-4">EGP 50</p>
+                                <span class="tag year is-primary">Third Year</span>
+                                <span class="tag stage is-primary">First Stage</span>
+                            </div>
+                            <a href="#" class="card-footer-item button is-bg-red is-fullwidth buy">Go to Lecture</a>
+                        </div>
+                        
+                        <div class="card filtered">
+                            <div class="card-image">
+                                <img src="https://via.placeholder.com/500x300 "alt="image">
+                            </div>
+                            <div class="card-content">
+                                <p class="title is-5">Most Advanced Physics Rules, wil make you better</p>
+                                <p class="subtitle is-6">Mohammed Ali</p>
+                                <p class="subtitle is-6">1st Secondary</p>
+                                <p class="subtitle is-6">5 Hours of video</p>
+                                <p class="subtitle is-4">EGP 50</p>
+                                <span class="tag year is-primary">Third Year</span>
+                                <span class="tag stage is-primary">Second Stage</span>
+                            </div>
+                            <a href="#" class="card-footer-item button is-bg-red is-fullwidth buy">Go to Lecture</a>
+                        </div>
+
+                        <div class="card filtered">
+                            <div class="card-image">
+                                <img src="https://via.placeholder.com/500x300 "alt="image">
+                            </div>
+                            <div class="card-content">
+                                <p class="title is-5">Most Advanced Physics Rules, wil make you better</p>
+                                <p class="subtitle is-6">Mohammed Ali</p>
+                                <p class="subtitle is-6">1st Secondary</p>
+                                <p class="subtitle is-6">5 Hours of video</p>
+                                <p class="subtitle is-4">EGP 50</p>
+                                <span class="tag year is-primary">First Year</span>
+                                <span class="tag stage is-primary">First Stage</span>
+                            </div>
+                            <a href="#" class="card-footer-item button is-bg-red is-fullwidth buy">Go to Lecture</a>
+                        </div>
+                        
+                        <div class="card filtered">
+                            <div class="card-image">
+                                <img src="https://via.placeholder.com/500x300 "alt="image">
+                            </div>
+                            <div class="card-content">
+                                <p class="title is-5">Most Advanced Physics Rules, wil make you better</p>
+                                <p class="subtitle is-6">Mohammed Ali</p>
+                                <p class="subtitle is-6">1st Secondary</p>
+                                <p class="subtitle is-6">5 Hours of video</p>
+                                <p class="subtitle is-4">EGP 50</p>
+                                <span class="tag year is-primary">First Year</span>
+                                <span class="tag stage is-primary">Second Stage</span>
+                            </div>
+                            <a href="#" class="card-footer-item button is-bg-red is-fullwidth buy">Go to Lecture</a>
+                        </div>
+
+                        <div class="card filtered">
+                            <div class="card-image">
+                                <img src="https://via.placeholder.com/500x300 "alt="image">
+                            </div>
+                            <div class="card-content">
+                                <p class="title is-5">Most Advanced Physics Rules, wil make you better</p>
+                                <p class="subtitle is-6">Mohammed Ali</p>
+                                <p class="subtitle is-6">1st Secondary</p>
+                                <p class="subtitle is-6">5 Hours of video</p>
+                                <p class="subtitle is-4">EGP 50</p>
+                                <span class="tag year is-primary">Second Year</span>
+                                <span class="tag stage is-primary">First Stage</span>
+                            </div>
+                            <a href="#" class="card-footer-item button is-bg-red is-fullwidth buy">Go to Lecture</a>
+                        </div>
+
+                        <div class="card filtered">
+                            <div class="card-image">
+                                <img src="https://via.placeholder.com/500x300 "alt="image">
+                            </div>
+                            <div class="card-content">
+                                <p class="title is-5">Most Advanced Physics Rules, wil make you better</p>
+                                <p class="subtitle is-6">Mohammed Ali</p>
+                                <p class="subtitle is-6">1st Secondary</p>
+                                <p class="subtitle is-6">5 Hours of video</p>
+                                <p class="subtitle is-4">EGP 50</p>
+                                <span class="tag year is-primary">Second Year</span>
+                                <span class="tag stage is-primary">Second Stage</span>
+                            </div>
+                            <a href="#" class="card-footer-item button is-bg-red is-fullwidth buy">Go to Lecture</a>
+                        </div>
+
+                        <div class="card filtered">
+                            <div class="card-image">
+                                <img src="https://via.placeholder.com/500x300 "alt="image">
+                            </div>
+                            <div class="card-content">
+                                <p class="title is-5">Most Advanced Physics Rules, wil make you better</p>
+                                <p class="subtitle is-6">Mohammed Ali</p>
+                                <p class="subtitle is-6">1st Secondary</p>
+                                <p class="subtitle is-6">5 Hours of video</p>
+                                <p class="subtitle is-4">EGP 50</p>
+                                <span class="tag year is-primary">Third Year</span>
+                                <span class="tag stage is-primary">First Stage</span>
+                            </div>
+                            <a href="#" class="card-footer-item button is-bg-red is-fullwidth buy">Go to Lecture</a>
+                        </div>
+                        
+                        <div class="card filtered">
+                            <div class="card-image">
+                                <img src="https://via.placeholder.com/500x300 "alt="image">
+                            </div>
+                            <div class="card-content">
+                                <p class="title is-5">Most Advanced Physics Rules, wil make you better</p>
+                                <p class="subtitle is-6">Mohammed Ali</p>
+                                <p class="subtitle is-6">1st Secondary</p>
+                                <p class="subtitle is-6">5 Hours of video</p>
+                                <p class="subtitle is-4">EGP 50</p>
+                                <span class="tag year is-primary">Third Year</span>
+                                <span class="tag stage is-primary">Second Stage</span>
+                            </div>
+                            <a href="#" class="card-footer-item button is-bg-red is-fullwidth buy">Go to Lecture</a>
+                        </div>
+
+                        <div class="card filtered">
+                            <div class="card-image">
+                                <img src="https://via.placeholder.com/500x300 "alt="image">
+                            </div>
+                            <div class="card-content">
+                                <p class="title is-5">Most Advanced Physics Rules, wil make you better</p>
+                                <p class="subtitle is-6">Mohammed Ali</p>
+                                <p class="subtitle is-6">1st Secondary</p>
+                                <p class="subtitle is-6">5 Hours of video</p>
+                                <p class="subtitle is-4">EGP 50</p>
+                                <span class="tag year is-primary">First Year</span>
+                                <span class="tag stage is-primary">First Stage</span>
+                            </div>
+                            <a href="#" class="card-footer-item button is-bg-red is-fullwidth buy">Go to Lecture</a>
+                        </div>
+                        
+                        <div class="card filtered">
+                            <div class="card-image">
+                                <img src="https://via.placeholder.com/500x300 "alt="image">
+                            </div>
+                            <div class="card-content">
+                                <p class="title is-5">Most Advanced Physics Rules, wil make you better</p>
+                                <p class="subtitle is-6">Mohammed Ali</p>
+                                <p class="subtitle is-6">1st Secondary</p>
+                                <p class="subtitle is-6">5 Hours of video</p>
+                                <p class="subtitle is-4">EGP 50</p>
+                                <span class="tag year is-primary">First Year</span>
+                                <span class="tag stage is-primary">Second Stage</span>
+                            </div>
+                            <a href="#" class="card-footer-item button is-bg-red is-fullwidth buy">Go to Lecture</a>
+                        </div>
+
+                        <div class="card filtered">
+                            <div class="card-image">
+                                <img src="https://via.placeholder.com/500x300 "alt="image">
+                            </div>
+                            <div class="card-content">
+                                <p class="title is-5">Most Advanced Physics Rules, wil make you better</p>
+                                <p class="subtitle is-6">Mohammed Ali</p>
+                                <p class="subtitle is-6">1st Secondary</p>
+                                <p class="subtitle is-6">5 Hours of video</p>
+                                <p class="subtitle is-4">EGP 50</p>
+                                <span class="tag year is-primary">Second Year</span>
+                                <span class="tag stage is-primary">First Stage</span>
+                            </div>
+                            <a href="#" class="card-footer-item button is-bg-red is-fullwidth buy">Go to Lecture</a>
+                        </div>
+
+                        <div class="card filtered">
+                            <div class="card-image">
+                                <img src="https://via.placeholder.com/500x300 "alt="image">
+                            </div>
+                            <div class="card-content">
+                                <p class="title is-5">Most Advanced Physics Rules, wil make you better</p>
+                                <p class="subtitle is-6">Mohammed Ali</p>
+                                <p class="subtitle is-6">1st Secondary</p>
+                                <p class="subtitle is-6">5 Hours of video</p>
+                                <p class="subtitle is-4">EGP 50</p>
+                                <span class="tag year is-primary">Second Year</span>
+                                <span class="tag stage is-primary">Second Stage</span>
+                            </div>
+                            <a href="#" class="card-footer-item button is-bg-red is-fullwidth buy">Go to Lecture</a>
+                        </div>
+
+                        <div class="card filtered">
+                            <div class="card-image">
+                                <img src="https://via.placeholder.com/500x300 "alt="image">
+                            </div>
+                            <div class="card-content">
+                                <p class="title is-5">Most Advanced Physics Rules, wil make you better</p>
+                                <p class="subtitle is-6">Mohammed Ali</p>
+                                <p class="subtitle is-6">1st Secondary</p>
+                                <p class="subtitle is-6">5 Hours of video</p>
+                                <p class="subtitle is-4">EGP 50</p>
+                                <span class="tag year is-primary">Third Year</span>
+                                <span class="tag stage is-primary">First Stage</span>
+                            </div>
+                            <a href="#" class="card-footer-item button is-bg-red is-fullwidth buy">Go to Lecture</a>
+                        </div>
+                        
+                        <div class="card filtered">
+                            <div class="card-image">
+                                <img src="https://via.placeholder.com/500x300 "alt="image">
+                            </div>
+                            <div class="card-content">
+                                <p class="title is-5">Most Advanced Physics Rules, wil make you better</p>
+                                <p class="subtitle is-6">Mohammed Ali</p>
+                                <p class="subtitle is-6">1st Secondary</p>
+                                <p class="subtitle is-6">5 Hours of video</p>
+                                <p class="subtitle is-4">EGP 50</p>
+                                <span class="tag year is-primary">Third Year</span>
+                                <span class="tag stage is-primary">Second Stage</span>
+                            </div>
+                            <a href="#" class="card-footer-item button is-bg-red is-fullwidth buy">Go to Lecture</a>
+                        </div>
+
+                        <div class="card filtered">
+                            <div class="card-image">
+                                <img src="https://via.placeholder.com/500x300 "alt="image">
+                            </div>
+                            <div class="card-content">
+                                <p class="title is-5">Most Advanced Physics Rules, wil make you better</p>
+                                <p class="subtitle is-6">Mohammed Ali</p>
+                                <p class="subtitle is-6">1st Secondary</p>
+                                <p class="subtitle is-6">5 Hours of video</p>
+                                <p class="subtitle is-4">EGP 50</p>
+                                <span class="tag year is-primary">First Year</span>
+                                <span class="tag stage is-primary">First Stage</span>
+                            </div>
+                            <a href="#" class="card-footer-item button is-bg-red is-fullwidth buy">Go to Lecture</a>
+                        </div>
+                        
+                        <div class="card filtered">
+                            <div class="card-image">
+                                <img src="https://via.placeholder.com/500x300 "alt="image">
+                            </div>
+                            <div class="card-content">
+                                <p class="title is-5">Most Advanced Physics Rules, wil make you better</p>
+                                <p class="subtitle is-6">Mohammed Ali</p>
+                                <p class="subtitle is-6">1st Secondary</p>
+                                <p class="subtitle is-6">5 Hours of video</p>
+                                <p class="subtitle is-4">EGP 50</p>
+                                <span class="tag year is-primary">First Year</span>
+                                <span class="tag stage is-primary">Second Stage</span>
+                            </div>
+                            <a href="#" class="card-footer-item button is-bg-red is-fullwidth buy">Go to Lecture</a>
+                        </div>
+
+                        <div class="card filtered">
+                            <div class="card-image">
+                                <img src="https://via.placeholder.com/500x300 "alt="image">
+                            </div>
+                            <div class="card-content">
+                                <p class="title is-5">Most Advanced Physics Rules, wil make you better</p>
+                                <p class="subtitle is-6">Mohammed Ali</p>
+                                <p class="subtitle is-6">1st Secondary</p>
+                                <p class="subtitle is-6">5 Hours of video</p>
+                                <p class="subtitle is-4">EGP 50</p>
+                                <span class="tag year is-primary">Second Year</span>
+                                <span class="tag stage is-primary">First Stage</span>
+                            </div>
+                            <a href="#" class="card-footer-item button is-bg-red is-fullwidth buy">Go to Lecture</a>
+                        </div>
+
+                        <div class="card filtered">
+                            <div class="card-image">
+                                <img src="https://via.placeholder.com/500x300 "alt="image">
+                            </div>
+                            <div class="card-content">
+                                <p class="title is-5">Most Advanced Physics Rules, wil make you better</p>
+                                <p class="subtitle is-6">Mohammed Ali</p>
+                                <p class="subtitle is-6">1st Secondary</p>
+                                <p class="subtitle is-6">5 Hours of video</p>
+                                <p class="subtitle is-4">EGP 50</p>
+                                <span class="tag year is-primary">Second Year</span>
+                                <span class="tag stage is-primary">Second Stage</span>
+                            </div>
+                            <a href="#" class="card-footer-item button is-bg-red is-fullwidth buy">Go to Lecture</a>
+                        </div>
+
+                        <div class="card filtered">
+                            <div class="card-image">
+                                <img src="https://via.placeholder.com/500x300 "alt="image">
+                            </div>
+                            <div class="card-content">
+                                <p class="title is-5">Most Advanced Physics Rules, wil make you better</p>
+                                <p class="subtitle is-6">Mohammed Ali</p>
+                                <p class="subtitle is-6">1st Secondary</p>
+                                <p class="subtitle is-6">5 Hours of video</p>
+                                <p class="subtitle is-4">EGP 50</p>
+                                <span class="tag year is-primary">Third Year</span>
+                                <span class="tag stage is-primary">First Stage</span>
+                            </div>
+                            <a href="#" class="card-footer-item button is-bg-red is-fullwidth buy">Go to Lecture</a>
+                        </div>
+                        
+                        <div class="card filtered">
+                            <div class="card-image">
+                                <img src="https://via.placeholder.com/500x300 "alt="image">
+                            </div>
+                            <div class="card-content">
+                                <p class="title is-5">Most Advanced Physics Rules, wil make you better</p>
+                                <p class="subtitle is-6">Mohammed Ali</p>
+                                <p class="subtitle is-6">1st Secondary</p>
+                                <p class="subtitle is-6">5 Hours of video</p>
+                                <p class="subtitle is-4">EGP 50</p>
+                                <span class="tag year is-primary">Third Year</span>
+                                <span class="tag stage is-primary">Second Stage</span>
+                            </div>
+                            <a href="#" class="card-footer-item button is-bg-red is-fullwidth buy">Go to Lecture</a>
+                        </div>
+
+                        <div class="card filtered">
+                            <div class="card-image">
+                                <img src="https://via.placeholder.com/500x300 "alt="image">
+                            </div>
+                            <div class="card-content">
+                                <p class="title is-5">Most Advanced Physics Rules, wil make you better</p>
+                                <p class="subtitle is-6">Mohammed Ali</p>
+                                <p class="subtitle is-6">1st Secondary</p>
+                                <p class="subtitle is-6">5 Hours of video</p>
+                                <p class="subtitle is-4">EGP 50</p>
+                                <span class="tag year is-primary">First Year</span>
+                                <span class="tag stage is-primary">First Stage</span>
+                            </div>
+                            <a href="#" class="card-footer-item button is-bg-red is-fullwidth buy">Go to Lecture</a>
+                        </div>
+                        
+                        <div class="card filtered">
+                            <div class="card-image">
+                                <img src="https://via.placeholder.com/500x300 "alt="image">
+                            </div>
+                            <div class="card-content">
+                                <p class="title is-5">Most Advanced Physics Rules, wil make you better</p>
+                                <p class="subtitle is-6">Mohammed Ali</p>
+                                <p class="subtitle is-6">1st Secondary</p>
+                                <p class="subtitle is-6">5 Hours of video</p>
+                                <p class="subtitle is-4">EGP 50</p>
+                                <span class="tag year is-primary">First Year</span>
+                                <span class="tag stage is-primary">Second Stage</span>
+                            </div>
+                            <a href="#" class="card-footer-item button is-bg-red is-fullwidth buy">Go to Lecture</a>
+                        </div>
+
+                        <div class="card filtered">
+                            <div class="card-image">
+                                <img src="https://via.placeholder.com/500x300 "alt="image">
+                            </div>
+                            <div class="card-content">
+                                <p class="title is-5">Most Advanced Physics Rules, wil make you better</p>
+                                <p class="subtitle is-6">Mohammed Ali</p>
+                                <p class="subtitle is-6">1st Secondary</p>
+                                <p class="subtitle is-6">5 Hours of video</p>
+                                <p class="subtitle is-4">EGP 50</p>
+                                <span class="tag year is-primary">Second Year</span>
+                                <span class="tag stage is-primary">First Stage</span>
+                            </div>
+                            <a href="#" class="card-footer-item button is-bg-red is-fullwidth buy">Go to Lecture</a>
+                        </div>
+
+                        <div class="card filtered">
+                            <div class="card-image">
+                                <img src="https://via.placeholder.com/500x300 "alt="image">
+                            </div>
+                            <div class="card-content">
+                                <p class="title is-5">Most Advanced Physics Rules, wil make you better</p>
+                                <p class="subtitle is-6">Mohammed Ali</p>
+                                <p class="subtitle is-6">1st Secondary</p>
+                                <p class="subtitle is-6">5 Hours of video</p>
+                                <p class="subtitle is-4">EGP 50</p>
+                                <span class="tag year is-primary">Second Year</span>
+                                <span class="tag stage is-primary">Second Stage</span>
+                            </div>
+                            <a href="#" class="card-footer-item button is-bg-red is-fullwidth buy">Go to Lecture</a>
+                        </div>
+
+                        <div class="card filtered">
+                            <div class="card-image">
+                                <img src="https://via.placeholder.com/500x300 "alt="image">
+                            </div>
+                            <div class="card-content">
+                                <p class="title is-5">Most Advanced Physics Rules, wil make you better</p>
+                                <p class="subtitle is-6">Mohammed Ali</p>
+                                <p class="subtitle is-6">1st Secondary</p>
+                                <p class="subtitle is-6">5 Hours of video</p>
+                                <p class="subtitle is-4">EGP 50</p>
+                                <span class="tag year is-primary">Third Year</span>
+                                <span class="tag stage is-primary">First Stage</span>
+                            </div>
+                            <a href="#" class="card-footer-item button is-bg-red is-fullwidth buy">Go to Lecture</a>
+                        </div>
+                        
+                        <div class="card filtered">
+                            <div class="card-image">
+                                <img src="https://via.placeholder.com/500x300 "alt="image">
+                            </div>
+                            <div class="card-content">
+                                <p class="title is-5">Most Advanced Physics Rules, wil make you better</p>
+                                <p class="subtitle is-6">Mohammed Ali</p>
+                                <p class="subtitle is-6">1st Secondary</p>
+                                <p class="subtitle is-6">5 Hours of video</p>
+                                <p class="subtitle is-4">EGP 50</p>
+                                <span class="tag year is-primary">Third Year</span>
+                                <span class="tag stage is-primary">Second Stage</span>
+                            </div>
+                            <a href="#" class="card-footer-item button is-bg-red is-fullwidth buy">Go to Lecture</a>
+                        </div>
+
+                        <div class="card filtered">
+                            <div class="card-image">
+                                <img src="https://via.placeholder.com/500x300 "alt="image">
+                            </div>
+                            <div class="card-content">
+                                <p class="title is-5">Most Advanced Physics Rules, wil make you better</p>
+                                <p class="subtitle is-6">Mohammed Ali</p>
+                                <p class="subtitle is-6">1st Secondary</p>
+                                <p class="subtitle is-6">5 Hours of video</p>
+                                <p class="subtitle is-4">EGP 50</p>
+                                <span class="tag year is-primary">First Year</span>
+                                <span class="tag stage is-primary">First Stage</span>
+                            </div>
+                            <a href="#" class="card-footer-item button is-bg-red is-fullwidth buy">Go to Lecture</a>
+                        </div>
+                        
+                        <div class="card filtered">
+                            <div class="card-image">
+                                <img src="https://via.placeholder.com/500x300 "alt="image">
+                            </div>
+                            <div class="card-content">
+                                <p class="title is-5">Most Advanced Physics Rules, wil make you better</p>
+                                <p class="subtitle is-6">Mohammed Ali</p>
+                                <p class="subtitle is-6">1st Secondary</p>
+                                <p class="subtitle is-6">5 Hours of video</p>
+                                <p class="subtitle is-4">EGP 50</p>
+                                <span class="tag year is-primary">First Year</span>
+                                <span class="tag stage is-primary">Second Stage</span>
+                            </div>
+                            <a href="#" class="card-footer-item button is-bg-red is-fullwidth buy">Go to Lecture</a>
+                        </div>
+
+                        <div class="card filtered">
+                            <div class="card-image">
+                                <img src="https://via.placeholder.com/500x300 "alt="image">
+                            </div>
+                            <div class="card-content">
+                                <p class="title is-5">Most Advanced Physics Rules, wil make you better</p>
+                                <p class="subtitle is-6">Mohammed Ali</p>
+                                <p class="subtitle is-6">1st Secondary</p>
+                                <p class="subtitle is-6">5 Hours of video</p>
+                                <p class="subtitle is-4">EGP 50</p>
+                                <span class="tag year is-primary">Second Year</span>
+                                <span class="tag stage is-primary">First Stage</span>
+                            </div>
+                            <a href="#" class="card-footer-item button is-bg-red is-fullwidth buy">Go to Lecture</a>
+                        </div>
+
+                        <div class="card filtered">
+                            <div class="card-image">
+                                <img src="https://via.placeholder.com/500x300 "alt="image">
+                            </div>
+                            <div class="card-content">
+                                <p class="title is-5">Most Advanced Physics Rules, wil make you better</p>
+                                <p class="subtitle is-6">Mohammed Ali</p>
+                                <p class="subtitle is-6">1st Secondary</p>
+                                <p class="subtitle is-6">5 Hours of video</p>
+                                <p class="subtitle is-4">EGP 50</p>
+                                <span class="tag year is-primary">Second Year</span>
+                                <span class="tag stage is-primary">Second Stage</span>
+                            </div>
+                            <a href="#" class="card-footer-item button is-bg-red is-fullwidth buy">Go to Lecture</a>
+                        </div>
+
+                        <div class="card filtered">
+                            <div class="card-image">
+                                <img src="https://via.placeholder.com/500x300 "alt="image">
+                            </div>
+                            <div class="card-content">
+                                <p class="title is-5">Most Advanced Physics Rules, wil make you better</p>
+                                <p class="subtitle is-6">Mohammed Ali</p>
+                                <p class="subtitle is-6">1st Secondary</p>
+                                <p class="subtitle is-6">5 Hours of video</p>
+                                <p class="subtitle is-4">EGP 50</p>
+                                <span class="tag year is-primary">Third Year</span>
+                                <span class="tag stage is-primary">First Stage</span>
+                            </div>
+                            <a href="#" class="card-footer-item button is-bg-red is-fullwidth buy">Go to Lecture</a>
+                        </div>
+                        
+                        <div class="card filtered">
+                            <div class="card-image">
+                                <img src="https://via.placeholder.com/500x300 "alt="image">
+                            </div>
+                            <div class="card-content">
+                                <p class="title is-5">Most Advanced Physics Rules, wil make you better</p>
+                                <p class="subtitle is-6">Mohammed Ali</p>
+                                <p class="subtitle is-6">1st Secondary</p>
+                                <p class="subtitle is-6">5 Hours of video</p>
+                                <p class="subtitle is-4">EGP 50</p>
+                                <span class="tag year is-primary">Third Year</span>
+                                <span class="tag stage is-primary">Second Stage</span>
+                            </div>
+                            <a href="#" class="card-footer-item button is-bg-red is-fullwidth buy">Go to Lecture</a>
+                        </div>
+                    </div>
+                </div>
+                <p class="title is-4 has-text-centered ifnot" style="display: none;">No Courses Found</p>
+            </section>
+        </section>
+        
+
+        <div class="pagesCount">
+        </div>
+
+
+        <footer class="footer">
+        </footer>
+    
+        <div class="licens">  
+        </div>
+
+    </body>
+</html>
+
+<script src="/assets/javascript/javascript.js"></script>
+<script src="/assets/javascript/navFooterLicenes.js"></script>
+<script>
+    makeCardPages()
+</script>
