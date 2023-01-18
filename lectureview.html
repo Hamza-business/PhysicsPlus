@@ -71,13 +71,9 @@
                             <div class="tab">
                                 <h3 class="title is-3">Files</h3>
                                 <p class="discription">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. In obcaecati iste saepe repellat aut dicta animi qui consequatur, veniam earum! Ex reiciendis possimus doloremque dolorum quos molestiae error libero fuga.
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. In obcaecati iste saepe repellat aut dicta animi qui consequatur, veniam earum! Ex reiciendis possimus doloremque dolorum quos molestiae error libero fuga.
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. In obcaecati iste saepe repellat aut dicta animi qui consequatur, veniam earum! Ex reiciendis possimus doloremque dolorum quos molestiae error libero fuga.
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. In obcaecati iste saepe repellat aut dicta animi qui consequatur, veniam earum! Ex reiciendis possimus doloremque dolorum quos molestiae error libero fuga.
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. In obcaecati iste saepe repellat aut dicta animi qui consequatur, veniam earum! Ex reiciendis possimus doloremque dolorum quos molestiae error libero fuga.
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. In obcaecati iste saepe repellat aut dicta animi qui consequatur, veniam earum! Ex reiciendis possimus doloremque dolorum quos molestiae error libero fuga.
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. In obcaecati iste saepe repellat aut dicta animi qui consequatur, veniam earum! Ex reiciendis possimus doloremque dolorum quos molestiae error libero fuga.
+                                    <a href="">Download File</a>
+                                    <a href="">Download File</a>
+                                    <a href="">Download File</a>
                                 </p>
                             </div>
 
@@ -86,7 +82,7 @@
                             <div class="tab">
                                 <h3 class="title is-3">Quiz</h3>
                                 <p class="discription">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. In obcaecati iste saepe repellat aut dicta animi qui consequatur, veniam earum! Ex reiciendis possimus doloremque dolorum quos molestiae error libero fuga.
+                                    <a href="" class="quizLink"><i class="fas fa-vial"></i> Quiz Name</a>
                                 </p>
                             </div>
 
@@ -94,9 +90,89 @@
                             <label for="Questions" class="tabfree">Questions</label>
                             <div class="tab">
                                 <h3 class="title is-3">Questions</h3>
-                                <p class="discription">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. In obcaecati iste saepe repellat aut dicta animi qui consequatur, veniam earum! Ex reiciendis possimus doloremque dolorum quos molestiae error libero fuga.
-                                </p>
+
+                                <div class="formASK">
+                                    <div class="field">
+                                        <label class="label">Question</label>
+                                        <div class="control">
+                                            <textarea class="textarea" placeholder="Question"></textarea>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="field">
+                                        <div id="file-upload" class="file has-name">
+                                            <label class="file-label">
+                                                <input class="file-input" type="file" id="uploader1" name="resume">
+                                                <span class="file-cta is-bg-purpel">
+                                                    <span class="file-icon">
+                                                        <i class="fas fa-upload"></i>
+                                                    </span>
+                                                    <span class="file-label">Add image</span>
+                                                </span>
+                                                <span class="file-name" id="filesName">No images uploaded</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="field is-grouped">
+                                        <div class="control">
+                                            <button class="button buy">Add Question</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
+                                <p class="showQues " onclick="document.querySelector('.otherQus').classList.toggle('active')">Show Other Questions</p>
+                                <div class="otherQus">
+
+                                    <!-- Comment container -->
+                                    <div class="media-content mediaContainer">
+                                        <!-- Ask container -->
+                                        <div class="content">
+                                            <p>
+                                                <strong>Student Name</strong>
+                                                <br>
+                                                <span class="YourMessage">ايها الدعم الفني العظييييم لقد جائني ايرور كبيييير ايرور 404</span>
+                                                <br>
+                                                <img src="https://via.placeholder.com/400x200" class="feedbackImage" alt=""><br>
+                                                <small class="">1985/10/1</small>
+                                            </p>
+                                        </div>
+                                
+                                        <!-- Answer container -->
+                                        <article class="media">
+                                            <figure class="media-left">
+                                                <img src="https://via.placeholder.com/45">
+                                            </figure>
+                                            <div class="media-content">
+                                                <div class="content">
+                                                    <p>
+                                                        <strong>Mr Mohammed Ali</strong>
+                                                        <br>
+                                                        <span class="YourMessage">ده ايرور بيجيلك لما متحلش الواجب ومتسمعش كلام المستر</span>
+                                                        <br>
+                                                        <small>2000/1/1 · <a>replay</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+
+                                    <div class="media-content mediaContainer">
+                                        <!-- Ask container -->
+                                        <div class="content">
+                                            <p>
+                                                <strong>Student Name</strong>
+                                                <br>
+                                                <span class="YourMessage">ايها الدعم الفني العظييييم لقد جائني ايرور كبيييير ايرور 404</span>
+                                                <br>
+                                                <img src="https://via.placeholder.com/400x200" class="feedbackImage" alt=""><br>
+                                                <small class="">1985/10/1</small>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -117,6 +193,11 @@
 </html>
 
 <script src="/assets/javascript/javascript.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <script>
-    lecturesDo()
+    lecturesDo();
+    let uploader = document.getElementById("uploader1")
+    uploader.addEventListener('change',()=>{
+        document.getElementById("filesName").textContent = uploader.value.split("\\").at(-1)
+    })
 </script>

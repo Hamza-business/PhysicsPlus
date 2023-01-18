@@ -871,6 +871,9 @@ table{
     color: #fff !important;
     background-color: var(--third-color) !important;
 }
+.answers.ques{
+    scrollbar-width: thin;
+}
 .quizs .quizCont .answers .answeredQ{
     color: #fff !important;
     background-color: var(--second-color) !important;
@@ -1026,6 +1029,22 @@ table{
     margin-bottom: 10px;
     border-radius: 8px;
     width: 100%;
+}
+.ans.bordered {
+    display: flex;
+    align-items: center;
+}
+.ans.bordered input[type="radio"] {
+    border-radius: 50%;
+    margin-right: 6px;
+    margin-left: 0px;
+}
+.ans.bordered input::before {
+    margin-left: 3px;
+    height: 13px !important;
+    width: 13px !important;
+    margin-left: 0.5px !important;
+    margin-top: 0px !important;
 }
 .quiz-ans .paragraph {
     margin-bottom: 0.6rem !important;
@@ -1625,7 +1644,7 @@ td img {
     padding-top: 0px;
     padding-bottom: 0px;
 }
-ul, ul *{
+.courseData ul, .courseData ul *{
     list-style: inside !important;
     font-size: 17px;
 }
@@ -1868,6 +1887,7 @@ ul, ul *{
     padding-bottom: 60px;
     position: relative;
     padding-right: 20px;
+    padding-bottom: 30px;
 }
 .contentMenu .is-size-4{
     font-weight: 600;
@@ -1903,6 +1923,10 @@ ul, ul *{
 .tapss1 .discription a{
     text-decoration: underline !important;
     color: var(--third-color);
+    font-weight: 700;
+}
+.quizLink{
+    text-decoration: none !important;
 }
 .mytabs {
     display: flex;
@@ -1937,6 +1961,38 @@ ul, ul *{
     margin-bottom: 0.5rem;
     color:var(--second-color);
 }
+.mytabs .media {
+    margin-left: 30px;
+}
+.mytabs .mediaContainer{
+    border-bottom: 2px solid var(--third-color);
+    margin-bottom: 26px;
+}
+.mytabs .media-content {
+    overflow-x: visible;
+}
+.mytabs .otherQus {
+    max-height: 500px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+.mytabs .media-content .content{
+    margin-bottom: 14px;
+}
+.mytabs .otherQus{
+    display: none;
+}
+.mytabs .otherQus.active{
+    display: block;
+}
+.showQues{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px;
+}
+
+
+
 .lNav {
     width: 100%;
     height: max-content;
@@ -1995,6 +2051,7 @@ ul, ul *{
         width: 100% !important;
         padding: 10px 30px;
         transition: 0.5s;
+        padding-bottom: 50px !important;
     }
     .lectViews .column.is-2 {
         padding-bottom: 0;
