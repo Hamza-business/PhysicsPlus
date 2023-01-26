@@ -2244,3 +2244,56 @@ td img {
 
 
 
+
+
+.login .box {
+    background-color: var(--third-color);
+    color: #fff;
+}
+.login .hero-body.cct {
+    padding: 0;
+}
+.login .field .label {
+    color: var(--main-color);
+}
+.login .hero-body {
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+.hero.login  {
+    background-color: transparent;
+}
+.hero.login .column {
+    padding: 0;
+}
+.hero.login .checkbox {
+    display: flex;
+    color: var(--main-color);
+    cursor: pointer;
+}
+.hero.login .reme {
+    padding-left: 10px;
+}
+.hero.login .button {
+    background-color: var(--fourth-color);
+    border-width: 1px;
+    color: var(--third-color) !important;
+    padding: calc(0.5em - 1px) 1em;
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.linkcentered{
+    width: 100%;
+    color: var(--main-color) !important;
+}
+.linkcentered:hover{
+    text-decoration: underline !important;
+}
+.hero.login .title.is-2.has-text-centered {
+    margin-bottom: 15px !important;
+}
+.hero.login .title.has-text-centered {
+    margin-bottom: 5px;
+    color: var(--second-color);
+}
